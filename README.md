@@ -7,17 +7,18 @@ David Král (**@davidkral9**), Marie Kleckerová (**@majdakleckerova**)
 
 #### Vybrané atributy
 1. Čas dne, kdy byl dotazník vyplněn
-2. 1. Jak jste se dozvěděli o DOD UJEP? (možnost více odpovědí)
+2. Jak jste se dozvěděli o DOD UJEP? (možnost více odpovědí)
 3. Které sociální sítě UJEP znáte? (možnost více odpovědí)
-4. 6. Je nabídka využívaných sociálních sítí UJEP dostačující?
-12. Na jakou fakultu UJEP se hlásíte? (možnost více odpovědí)
-13. 23. Jste:
+4. Je nabídka využívaných sociálních sítí UJEP dostačující?
+5. Na jakou fakultu UJEP se hlásíte? (možnost více odpovědí)
+6. Jste:
+7. Věková skupina
 
 
 #### Vybraný software
 - PowerBI
 - Apache Superset
-- Metabase
+- **Metabase** (s PostgreSQL)
 
 
 #### SQL Query
@@ -37,5 +38,4 @@ UNION ALL
 SELECT 'Pedagogická fakulta (PF)', COUNT(*) FROM dod_2025 WHERE fakulta_pf = true
 UNION ALL
 SELECT 'Fakulta sociálně ekonomická (FSE)', COUNT(*) FROM dod_2025 WHERE fakulta_fse = true
-
 ```
